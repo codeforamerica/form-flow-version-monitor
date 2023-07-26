@@ -21,9 +21,21 @@ This repository aims to create a single place to see which version of [form flow
 
 ## Production
 
-TODO: setup GitHub Pages deploy
-https://vitejs.dev/guide/static-deploy.html#github-pages
+We are following [Vites suggestion] of using a [GitHub Action to deploy] to GitHub pages on commits to `main`.
+
+[Vites suggestion]: https://vitejs.dev/guide/static-deploy.html#github-pages
+[GitHub Action to deploy]: .github/workflows/deploy-to-pages.yml
+
+### Under the hood commands
 
 Package files to be used for production:
 
-`npm run build`
+```
+npm run build
+```
+
+Preview built files with a static site server:
+
+```
+npm run preview
+```
