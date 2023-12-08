@@ -7,6 +7,7 @@ const repos = [
   { name: 'la-doc-uploader', search: 'def formFlowLibraryVersion' },
   { name: 'homeschool-pebt', search: 'def formFlowLibraryVersion' },
   { name: 'child-care-model', search: 'def formFlowLibraryVersion' },
+  { name: 'mnbenefits-demo', search: 'def formFlowLibraryVersion' }
 ];
 
 repos.forEach(async (repo) => {
