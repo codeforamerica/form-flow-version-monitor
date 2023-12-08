@@ -7,9 +7,11 @@ const repos = [
   { name: 'la-doc-uploader', search: 'def formFlowLibraryVersion' },
   { name: 'homeschool-pebt', search: 'def formFlowLibraryVersion' },
   { name: 'child-care-model', search: 'def formFlowLibraryVersion' },
+  { name: 'mnbenefits-demo', search: 'def formFlowLibraryVersion' }
 ];
 
 repos.forEach(async (repo) => {
+  console.log(`/repos/codeforamerica/${repo.name}/contents/build.gradle`);
   const fromGitHub = await octokit.request(
     `GET /repos/codeforamerica/${repo.name}/contents/build.gradle`,
     {
