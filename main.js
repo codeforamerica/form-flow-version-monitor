@@ -11,7 +11,6 @@ const repos = [
 ];
 
 repos.forEach(async (repo) => {
-  console.log(`/repos/codeforamerica/${repo.name}/contents/build.gradle`);
   const fromGitHub = await octokit.request(
     `GET /repos/codeforamerica/${repo.name}/contents/build.gradle`,
     {
