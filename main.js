@@ -1,12 +1,14 @@
 import { Octokit } from "octokit";
 
 const octokit = new Octokit();
-// Add new apps here
+
 const repos = [
   { name: 'form-flow-starter-app', search: 'def formFlowLibraryVersion' },
   { name: 'la-doc-uploader', search: 'def formFlowLibraryVersion' },
   { name: 'homeschool-pebt', search: 'def formFlowLibraryVersion' },
   { name: 'child-care-model', search: 'def formFlowLibraryVersion' },
+  { name: 'mdpilot', search: 'def formFlowLibraryVersion' },
+  { name: 'il-gcc-form-flow', search: 'def formFlowLibraryVersion' },
   { name: 'mnbenefits-demo', search: 'def formFlowLibraryVersion' }
 ];
 
